@@ -1,0 +1,261 @@
+
+body.lock {
+	overflow: hidden;
+}
+
+.popUp_subscribe {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #00000038;
+	display: block;
+	z-index: 100;
+	overflow: auto;
+}
+
+.subscribe {
+	position: relative;
+	top: 20px;
+	flex: 1 1 auto;
+	max-width: 711px;
+	padding: 60px 57px;
+	background-color: #101014;
+	margin: auto;
+}
+
+.subscribe-lock {
+	position: absolute;
+	top: 26px;
+	right: 26px;
+	font-size: 50px;
+	font-weight: 300;
+	color: #4F4F4F;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+
+.subscribe-header {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	color: #63E2B7;
+
+	margin-bottom: 73px;
+}
+
+/* .subscribe-content {
+
+} */
+
+.subscribe-content__typesub {
+	position: relative;
+}
+
+.subscribe-content__typesub-text {
+	position: absolute;
+	top: -37px;
+	left: 0;
+
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	
+	color: #7E7E7E;
+}
+
+.subscribe-content__typesub-block {
+	border: 2px solid #313131;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+
+	padding: 26px 20px;
+	margin-bottom: 43px;
+}
+
+
+
+
+.subscribe-content__typesub-block__arrow {
+	content: '';
+	position: absolute;
+	top: 34px;
+	right: 23px;
+	width: 16px;
+	height: 9px;
+	background: url('../img/символы/стрелкаБел.png') no-repeat 50% 50%;
+	transition: background .2s ease;
+	transition: transform .2s ease;
+}
+.subscribe-content__typesub-block:hover .subscribe-content__typesub-block__arrow {
+	background: url('../img/символы/стрелкаСер.png') no-repeat 50% 50%;
+}
+.subscribe-content__typesub-block.active .subscribe-content__typesub-block__arrow {
+	transform: rotate(180deg);
+}
+
+
+
+.subscribe-content__typesub-block__selected {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	
+	color: #ECECEC;
+	transition: color .2s ease;
+}
+.subscribe-content__typesub-block:hover .subscribe-content__typesub-block__selected {
+	color: #8F8F8F;
+}
+
+
+
+
+.subscribe-content__typesub-block__select {
+	display: none;
+}
+.subscribe-content__typesub-block__select.active {
+	display: block;
+	margin-top: 14px;
+}
+
+.subscribe-content__typesub-block__select-item {
+	color: #8F8F8F;
+	margin-bottom: 11px;
+	transition: color .2s ease;
+}
+.subscribe-content__typesub-block__select-item:hover {
+	color: #fff;
+}
+.subscribe-content__typesub-block__select-item:last-child {
+	margin-bottom: 0px;
+}
+
+
+
+.subscribe-content__prices {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 43px;
+}
+
+.subscribe-content__prices-comment {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 27px;
+	/* identical to box height */
+	
+	text-align: center;
+	text-decoration-line: line-through;
+	
+	color: #595959;
+}
+
+.subscribe-content__prices-price {
+	font-weight: 400;
+	font-size: 42px;
+	line-height: 51px;
+	text-align: center;
+	
+	/* Основной */
+	
+	color: #63E2B7;
+}
+
+.subscribe-content__btn {
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 43px;
+}
+
+.subscribe-content__text {
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 23px;
+}
+.subscribe-content__text p {
+	max-width: 502px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #888888;
+}
+
+.subscribe-line {
+	border: 0.5px solid #313131;
+
+	margin-bottom: 48px;
+}
+
+
+.subscribe-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subscribe-footer__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+
+	text-align: center;
+	color: #FFFFFF;
+
+	margin-bottom: 17px;
+}
+
+.subscribe-footer__list {
+	display: flex;
+	gap: 24px;
+}
+
+
+@media(max-width: 705px) {
+	.subscribe {
+		top: 0;
+		padding: 60px 27px;
+	}
+}
+@media(max-width: 425px) {
+	.subscribe-header {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 39px;
+		color: #63E2B7;
+	
+		margin-bottom: 73px;
+	}
+
+	.subscribe-content__prices-comment {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		/* identical to box height */
+		
+		text-align: center;
+		text-decoration-line: line-through;
+		
+		color: #595959;
+	}
+	
+	.subscribe-content__prices-price {
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 41px;
+		text-align: center;
+		
+		/* Основной */
+		
+		color: #63E2B7;
+	}
+
+	.subscribe-content__text p {
+		font-size: 14px;
+	}
+}

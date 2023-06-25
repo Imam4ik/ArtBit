@@ -1,0 +1,173 @@
+
+body.lockk {
+	overflow: hidden;
+}
+
+.popUp_registr {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #00000038;
+	display: block;
+	z-index: 100;
+	overflow: auto;
+}
+
+.registr {
+	position: relative;
+	top: 80px;
+	flex: 1 1 auto;
+	max-width: 711px;
+	padding: 60px 57px;
+	background-color: #101014;
+	margin: auto;
+}
+
+.registr-lock {
+	position: absolute;
+	top: 26px;
+	right: 26px;
+	font-size: 50px;
+	font-weight: 300;
+	color: #4F4F4F;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+.registr-header {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	color: #63E2B7;
+
+	margin-bottom: 73px;
+}
+
+.registr-header__entry {
+	background-color: transparent;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	/* identical to box height */
+	margin-right: 77px;
+	
+	color: #888888;
+	
+}
+.registr-header__registration {
+	background-color: transparent;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	/* identical to box height */
+	
+	
+	color: #888888;
+	
+}
+
+.registr-header__entry.active {
+	color: #63E2B7;
+}
+.registr-header__registration.active {
+	color: #63E2B7;
+}
+
+
+.registr-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.registr-content__login,
+.registr-content__password {
+	background-color: transparent;
+	border: 2px solid #313131;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	
+	color: #7E7E7E;
+	padding: 26px 20px;
+	max-width: 594px;
+	min-width: 0px;
+}
+.registr-content__login {
+	margin-bottom: 33px;
+}
+.registr-content__password {
+	margin-bottom: 46px;
+}
+
+
+.registr-content__forgot {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	/* identical to box height */
+	cursor: pointer;
+	
+	color: #63E2B7;
+}
+
+
+
+
+.registr-content__btn {
+	display: flex;
+	justify-content: left;
+
+	margin-bottom: 22px;
+}
+
+
+.registr-line {
+	border: 0.5px solid #313131;
+
+	margin-top: 31px;
+	margin-bottom: 33px;
+}
+
+
+.registr-footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.registr-footer__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+
+	text-align: center;
+	color: #FFFFFF;
+
+	margin-bottom: 17px;
+}
+
+.registr-footer__list {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+@media(max-width: 520px) {
+	.registr {
+		padding: 40px 25px;
+	}
+
+	.registr-header {
+		margin-bottom: 43px;
+	}
+	.registr-header__entry {
+		font-size: 22px;
+		margin-right: 30px;
+	}
+	.registr-header__registration {
+		font-size: 22px;
+	}
+
+	.registr-footer__list-img img {
+		width: 53px;
+	}
+}
